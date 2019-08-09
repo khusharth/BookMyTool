@@ -300,6 +300,10 @@ input[type=checkbox]:focus
   all: revert !important;
 }
 
+#register-submit {
+	border:0;
+}
+
 
 /*--------------------------------------------------------------
 # Footer

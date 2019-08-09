@@ -1,5 +1,5 @@
 // Validation using Parsley
-$('#signin-form').parsley();
+// $('#signin-form').parsley();
 
 // Switch Modals
 $('#forgetpassword').click(function(){         
