@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Machine</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- <link rel="stylesheet"  href="css/jquery.mobile-1.4.5.min.css"> -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet"  href="css/bootstrap.min.css">
+        <link rel="stylesheet"  href="css/scrolltabs.css">
+        <link rel="stylesheet"  href="css/ion.rangeSlider.min.css">
+        
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,300i,400&display=swap" rel="stylesheet"> 
+        
+        <script src="https://kit.fontawesome.com/0488692621.js"></script>
+    </head>
+    <body>
+
+            <!--==========================
+                        Navigation Bar
+            ============================-->
+            <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">BookMyTool</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></spanNavbar>
+                    </button>
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="form-inline my-2 my-lg-0 ml-3">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+
+                    <ul class="navbar-nav mr-auto nav-links">
+                        <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Features
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Freelancing</a>
+                        <a class="dropdown-item" href="#">Buy/Sell</a>
+                        <a class="dropdown-item" href="#">Forum</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="#">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="#">Logout</a>
+                    </li>
+                    </ul>
+                </div>
+            </nav>
+            <!--------- END Navigation Bar -------->
+
+
+            <!--==========================
+                        Machine
+            ============================-->
+            <section>
+                <div class="machine-container">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <!-- Blank -->
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="scroll">
+                                <div id="tabs2" class="scroll_tabs_theme_light">
+                                    <span>VMC</span>
+                                    <span>Drilling</span>
+                                    <span>Grinding</span>
+                                    <span>Boring</span>
+                                    <span>EDM</span>
+                                    <span>Laser</span>
+                                    <span>Robotics</span>
+                                    <span>Turing</span>
+                                    <span>Milling</span>
+                                    <span>Another Tab 9</span>
+                                    <span>Another Tab 10</span>
+                                    <span>Another Tab 11</span>
+                                    <span>Another Tab 12</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                       
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="filter-by"><i class="fas fa-filter mr-2" style="font-size: 18px"></i>Filter by</div>
+                            <div class="filter">
+                                <ul>
+                                    <li>
+                                        <form action="#"> 
+                                            <div class="select-box">        
+                                                <label for="select-box1" class="label select-box1"><span class="label-desc filter-head">Select a Filter</span></label>
+                                                <br>
+                                                <select id="select-box1" class="select">
+                                                <option value="Choice 1">Transfer Tool</option>
+                                                <option value="Choice 2">Injection Tool</option>
+                                                <option value="Choice 3">Neverland</option>
+                                                </select>
+                                            </div>    
+                                        </form>  
+                                    </li>
+
+                                    <li>
+                                            <input type="text" class="js-range-slider" name="my_range" value=""
+                                                data-type="double"
+                                                data-min="0"
+                                                data-max="1000"
+                                                data-from="200"
+                                                data-to="500"
+                                                data-grid="true"
+                                            />
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-9 vertical">
+                            <div class="card">
+                                <h6 class="card-header"><i class="fas fa-user-circle mr-3"></i>SUPPLIER ID: 11223344<span class="right-certificates">Certificates: ISO</span></h6>
+                                <h6 class="card-header shop-header">SHOP SPECIALISATION<br><span class="shop-text">Gauges, OEM parts, CNC machine ..</span></h6>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <img src="https://cdn.pixabay.com/photo/2016/03/04/19/36/gears-1236578_960_720.jpg" class="w-100">
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <h5 class="card-title"><span class="machine-name">CNC Turing</span><span class="available"></span></h5>
+                                            <ul>
+                                                <li>Bed Size: </li>
+                                                <li>Bed Size: </li>
+                                                <li>Bed Size: </li>
+                                                <li>Bed Size: </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <ul class="ul-right">
+                                                <li>Bed Size: </li>
+                                                <li>Bed Size: </li>
+                                                <li>Bed Size: </li>
+                                                <li>Bed Size: </li>
+                                            </ul>
+                                        </div>
+
+                                        <!------ SUPPLIER INFORMATION ------>
+                                        <div class="info-box info-box3" data-toggle="modal" data-target="#supplier-modal">
+                                            <p>View Information</p>
+                                        </div>
+                                        <div class="modal fade" id="supplier-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                                <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLongTitle">Supplier Information</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <ul>
+                                                        <li><strong>Name: </strong>Rama Krishna</li>
+                                                        <li><strong>Email: </strong>bookmytool@gmail.com</li>
+                                                        <li><strong>Address: </strong>Loni Kalbhor</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!---------END Machine -------->
+
+
+            <!--==========================
+                        Footer
+            ============================-->
+            <footer id="footer">
+                    <div class="footer-top">
+                        <div class="container">
+                            <div class="row">
+                    
+                            <div class="col-lg-3 col-md-6 footer-info">
+                                <h5>BookMyTool</h4>
+                                <p>In alias aperiam. Placeat tempore facere. Officiis voluptate ipsam vel eveniet est dolor et totam porro. Perspiciatis ad omnis fugit molestiae recusandae possimus. Aut consectetur id quis. In inventore consequatur ad voluptate cupiditate debitis accusamus repellat cumque.</p>
+                            </div>
+                    
+                            <div class="col-lg-3 col-md-6 footer-links">
+                                <h4>Features</h4>
+                                <ul>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Machine</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Inventory</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Plastic Molds</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Blow Molds</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Rubber Molds</a></li>
+                                </ul>
+                            </div>
+                    
+                            <div class="col-lg-3 col-md-6 footer-links">
+                                <h4>Features</h4>
+                                <ul>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Die Cast Tools</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Press Tools</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Stamping Tools</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Jix and Fixtures</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Gauges</a></li>
+                                </ul>
+                            </div>
+                    
+                            <div class="col-lg-3 col-md-6 footer-contact">
+                                <h4>Contact Us</h4>
+                                <p>
+                                Loni Kalbhor<br>
+                                Pune, Maharashtra<br>
+                                412201<br>
+                                <strong>Phone:</strong> +91 99999 88888<br>
+                                <strong>Email:</strong> bookmytool@example.com<br>
+                                </p>
+                    
+                                <div class="social-links">
+                                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+                                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="google-plus"><i class="fab fa-google-plus-g"></i></a>
+                                <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                    
+                            </div>
+                    
+                            </div>
+                        </div>
+                        </div>
+                    
+                        <div class="container">
+                        <div class="copyright">
+                            &copy; Copyright <strong>BookMyTool</strong>. All Rights Reserved
+                        </div>
+                        <div class="credits">
+                            <!--
+                            All the links in the footer should remain intact.
+                            You can delete the links only if you purchased the pro version.
+                            Licensing information: https://bootstrapmade.com/license/
+                            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
+                            -->
+                            Designed by MIT</a>
+                        </div>
+                    </div>
+            </footer>
+
+                      
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+            <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/jquery.scrolltabs.js"></script>
+            <script src="js/jquery.mousewheel.js"></script>
+            <script src="js/ion.rangeSlider.min.js"></script>            
+
+            <script type="text/javascript">
+            // For scroll bar at the top
+                $(document).ready(function(){
+                  $('#tabs2').scrollTabs();
+
+            // For Drop Down
+                  $("select").on("click" , function() {
+  
+                    $(this).parent(".select-box").toggleClass("open");
+                    
+                    });
+
+                    $(document).mouseup(function (e)
+                    {
+                        var container = $(".select-box");
+
+                        if (container.has(e.target).length === 0)
+                        {
+                            container.removeClass("open");
+                        }
+                    });
+
+
+                    $("select").on("change" , function() {
+                    
+                        var selection = $(this).find("option:selected").text(),
+                            labelFor = $(this).attr("id"),
+                            label = $("[for='" + labelFor + "']");
+                            
+                        label.find(".label-desc").html(selection);
+                            
+                        });
+                    // For Slider
+
+                    $(".js-range-slider").ionRangeSlider();
+    
+                    });
+            </script>
+            
+    </body>
+</html>

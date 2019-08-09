@@ -1,0 +1,412 @@
+/* ---------------------------- */
+/* BASIC CONFIGURATION */
+/* ---------------------------- */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    width: 100%;
+}
+
+/* ---- LINKS ----- */
+a:active,
+a:focus { 
+    outline-style: 0; 
+}
+
+a:hover{
+    color: rgb(16, 25, 146) !important;
+    outline: 0;
+    text-decoration: none !important;
+}
+
+/* ---------------------------- */
+/* NAVIGATION BAR*/
+/* ---------------------------- */
+
+.nav-links {
+    position: absolute;
+    right: 0;
+    padding-right: 50px;
+    letter-spacing: 1px;
+}
+
+.nav-links li {
+    font-size: 90%;
+}
+
+.nav-item {
+    padding-right: 5px;
+}
+
+.navbar-brand {
+    margin-left: 50px;
+}
+
+
+/* ---------------------------- */
+/* SIGN IN MODAL*/
+/* ---------------------------- */
+#forgot-password-modal-content {
+  display: none;
+}
+
+.modal-title {
+  font-size: 100%;
+}
+
+/* ------ FORM ------ */
+.btn-login {
+  height: 50px;
+  width: 100%;
+  padding-bottom: 10px !important;
+  font-weight: 700 !important;
+  color: #fff !important;
+}
+
+.btn-login:hover {
+    cursor: pointer;
+}
+
+.signin-container {
+  display:flex;
+  justify-content: center;
+}
+
+.signin-form .search-box,
+.forget-pass-form .search-box {
+  margin:0;
+  margin-bottom: 8px;
+  border: 0;
+}
+
+.signin-form ,
+.forget-pass-form {
+  font-size: 85%;
+}
+
+.signin-form input::placeholder,
+.forget-pass-form input::placeholder {
+  font-size: 80%;
+}
+
+.forget-pass {
+  float: right;
+}
+/* ------ Forget Password ------ */
+.modal-header {
+  justify-content: center !important;
+  padding-bottom: 0 !important;
+  border-bottom: transparent !important;
+}
+
+.reset-header {
+  color: #0286c2;
+  text-align: center !important;
+}
+
+.modal-body p {
+  font-size: 85%;
+  text-align: center;
+  font-weight: 100;
+  color: rgb(107, 106, 106);
+}
+
+.back-login-container {
+  margin-top: 10px;
+  display:flex;
+  justify-content: center;
+}
+
+/* ------ Register ------ */
+.register-title {
+  font-size: 130% !important;
+}
+.register-icons {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-size: 400%;
+  color: #000;
+}
+
+.register-icons:hover,
+.register-icons:active {
+  background-color: #aaaaaa;
+
+}
+
+.icons-text {
+  letter-spacing: 2px;
+  font-size: 110%;
+}
+
+/* ----- Search Button ------*/
+.search-box {
+    align-items: center;
+    background: #03A9F4;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    color: white;
+    display: flex;
+    font: 20px "Montserrat", sans-serif;
+    font-weight: 300;
+    justify-content: center;
+    margin: 20px;
+    margin-left: 180px;
+    padding: 10px;
+    padding-bottom: 0;
+    transition: all 400ms ease-in-out;
+  }
+
+
+.search-box p {
+  padding-left: 5px;
+}
+
+.search-box3:hover {
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    background: #0286c2;
+  }
+
+.search-box3:active {
+    background: #4FC3F7;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 50ms;
+  }
+
+/* ---------------------------------------- */
+/*------- REGISTRATION INDIVIDUAL --------*/
+/* ---------------------------------------- */
+.section-register {
+    background-image: linear-gradient(#000046,rgb(85, 201, 233) );
+    background-size: cover;
+    background-position: center;
+    height: 130vh;
+    width: 100%;
+}
+
+.register-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 130vh;
+}
+.card-title {
+    text-align: center;
+    color: #fff;
+    padding: 25px 0;
+    letter-spacing: 3px;
+}
+
+.card {
+    width: 40%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.6));
+    background-color:transparent !important;
+    margin: 40px auto !important;
+    border-radius: 0 !important;
+    box-shadow: 0px 35px 44px -22px #1f181b;
+}
+
+input:focus, textarea:focus, select:focus{
+
+    -webkit-appearance: none !important;
+    outline: 0 !important;
+
+}
+.card input:focus,
+.card input,
+.card select  {
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+
+.card select {
+    background-color: rgba(255, 255, 255, 0.062);
+    color: #fff;
+}
+
+
+.card input::placeholder {
+    color: rgb(173, 173, 173);
+}
+
+.register-form .search-box {
+  margin:0;
+  margin-bottom: 8px;
+  border: 0;
+}
+
+.register-form {
+  font-size: 85%;
+}
+
+.register-form input::placeholder {
+  font-size: 80%;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+#footer {
+    /* background: #101522; */
+    background: #10182c;
+    padding: 0 0 25px 0;
+    color: #eee;
+    font-size: 14px;
+  }
+  
+  #footer .footer-top {
+    background: #000029;
+    padding: 60px 0 30px 0;
+  }
+  
+  #footer .footer-top .footer-info {
+    margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-info h3 {
+    font-size: 26px;
+    margin: 0 0 20px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    color: #fff;
+  }
+  
+  #footer .footer-top .footer-info img {
+    height: 40px;
+    margin-bottom: 10px;
+  }
+  
+  #footer .footer-top .footer-info p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+  }
+  
+  #footer .footer-top .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #222636;
+    color: #eee;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+  }
+  
+  #footer .footer-top .social-links a:hover {
+    /* background: #f82249; */
+    background: #fff;
+    color: #fff;
+  }
+  
+  #footer .footer-top h4 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 12px;
+    /* border-bottom: 2px solid #f82249; */
+    border-bottom: 2px solid #fff;
+  }
+  
+  #footer .footer-top .footer-links {
+    margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #footer .footer-top .footer-links ul i {
+    padding-right: 5px;
+    /* color: #f82249; */
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  #footer .footer-top .footer-links ul li {
+    border-bottom: 1px solid #262c44;
+    padding: 10px 0;
+  }
+  
+  #footer .footer-top .footer-links ul li:first-child {
+    padding-top: 0;
+  }
+  
+  #footer .footer-top .footer-links ul a {
+    color: #eee;
+  }
+  
+  #footer .footer-top .footer-links ul a:hover {
+    color: #f82249;
+  }
+  
+  #footer .footer-top .footer-contact {
+    margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-contact p {
+    line-height: 26px;
+  }
+  
+  #footer .footer-top .footer-newsletter {
+    margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-newsletter input[type="email"] {
+    border: 0;
+    padding: 6px 8px;
+    width: 65%;
+  }
+  
+  #footer .footer-top .footer-newsletter input[type="submit"] {
+    background: #f82249;
+    border: 0;
+    width: 35%;
+    padding: 6px 0;
+    text-align: center;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  #footer .footer-top .footer-newsletter input[type="submit"]:hover {
+    background: #e0072f;
+  }
+  
+  #footer .copyright {
+    text-align: center;
+    padding-top: 30px;
+  }
+  
+  #footer .credits {
+    text-align: center;
+    font-size: 13px;
+    color: #ddd;
+  }

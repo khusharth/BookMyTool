@@ -1,0 +1,570 @@
+/* ---------------------------- */
+/* BASIC CONFIGURATION */
+/* ---------------------------- */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    width: 100%;
+}
+
+/* ---------------------------- */
+/* NAVIGATION BAR*/
+/* ---------------------------- */
+
+.nav-links {
+    position: absolute;
+    right: 0;
+    padding-right: 50px;
+    letter-spacing: 1px;
+}
+
+.nav-links li {
+    font-size: 90%;
+}
+
+.nav-item {
+    padding-right: 5px;
+}
+
+.navbar-brand {
+    margin-left: 50px;
+}
+
+
+/* ---------------------------- */
+/* SIGN IN MODAL*/
+/* ---------------------------- */
+#forgot-password-modal-content {
+  display: none;
+}
+
+.modal-title {
+  font-size: 100%;
+}
+
+/* ------ FORM ------ */
+.btn-login {
+  height: 50px;
+  width: 100%;
+  padding-bottom: 10px !important;
+  font-weight: 700 !important;
+}
+
+.signin-container {
+  display:flex;
+  justify-content: center;
+}
+
+.signin-form .search-box,
+.forget-pass-form .search-box {
+  margin:0;
+  margin-bottom: 8px;
+  border: 0;
+}
+
+.signin-form ,
+.forget-pass-form {
+  font-size: 85%;
+}
+
+.signin-form input::placeholder,
+.forget-pass-form input::placeholder {
+  font-size: 80%;
+}
+
+.forget-pass {
+  float: right;
+}
+/* ------ Forget Password ------ */
+.modal-header {
+  justify-content: center !important;
+  padding-bottom: 0 !important;
+  border-bottom: transparent !important;
+}
+
+.reset-header {
+  color: #0286c2;
+  text-align: center !important;
+}
+
+.modal-body p {
+  font-size: 85%;
+  text-align: center;
+  font-weight: 100;
+  color: rgb(107, 106, 106);
+}
+
+.back-login-container {
+  margin-top: 10px;
+  display:flex;
+  justify-content: center;
+}
+
+/* ------ Register ------ */
+.register-title {
+  font-size: 130% !important;
+}
+.register-icons {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-size: 400%;
+  color: #000;
+}
+
+.register-icons:hover,
+.register-icons:active {
+  background-color: #aaaaaa;
+
+}
+
+.icons-text {
+  letter-spacing: 2px;
+  font-size: 110%;
+}
+
+/* ---------------------------- */
+/* FEATURES*/
+/* ---------------------------- */
+
+/* ---- LINKS ----- */
+a:active,
+a:focus { 
+    outline-style: none; 
+}
+
+a:hover{
+    color: rgb(16, 25, 146) !important;
+    outline: none;
+    text-decoration: none !important;
+}
+
+/* ----------------------- */
+
+.section-1 {
+    background-image: linear-gradient(#000046,rgb(85, 201, 233) );
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.features {
+   padding-top: 25px;
+   margin-left: 35px;
+}
+
+
+
+.features ul{
+    list-style: none;
+  }
+  
+.features li{
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+  }
+
+.features a {
+    text-decoration: none !important;
+    color: #fff;
+}
+
+.features a:hover {
+    color: rgb(160, 158, 158) !important;
+}
+
+.icons {
+    margin-left: 40px;
+    font-size:30px;
+}
+
+.caption {
+    display: block;
+    font-size: 40%;
+    color: rgb(161, 161, 161);
+}
+
+.heading {
+    display: inline-block;
+    padding-top: 40px;
+    padding-left: 250px;
+    font-size: 200%;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+}
+.search-bar {
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+.search-btn {
+    margin-top: 100px !important;
+}
+
+.btn-select {
+    outline: 0 !important;
+    color: #fff !important;
+    background-color: #3A8AB6 !important;
+}
+
+/* ------ Cards ------*/
+.container-cards {
+    padding: 30px 30px 0 30px;
+}
+
+.container-cards input[type="search"]::placeholder {  
+                  
+    /* Firefox, Chrome, Opera */ 
+    text-align: center; 
+} 
+
+.cardd {
+    text-align: center;
+    padding: 20px 25px;
+    /* background-size: cover; */
+    /* background-attachment: fixed;  */
+    /* background-color: transparent !important; */
+    /* background-color: rgba(49, 97, 170, 0.1) !important; */
+    background-color: transparent !important;
+    border: 0 !important;
+    
+}
+
+.card-1 {
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.5)),url("../img/gears.jpg"); */
+    
+} 
+
+.card-2 {
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.85),rgba(0, 0, 0, 0.6)),url("../img/inventory.jpg"); */
+} 
+
+.cardd h2 {
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+/* ----- Search Button ------*/
+.search-box {
+    align-items: center;
+    background: #03A9F4;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    color: white;
+    display: flex;
+    font: 20px "Montserrat", sans-serif;
+    font-weight: 300;
+    justify-content: center;
+    margin: 20px;
+    margin-left: 180px;
+    padding: 10px;
+    padding-bottom: 0;
+    transition: all 400ms ease-in-out;
+  }
+
+
+.search-box p {
+  padding-left: 5px;
+}
+
+.search-box3:hover {
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    background: #0286c2;
+  }
+
+.search-box3:active {
+    background: #4FC3F7;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 50ms;
+  }
+
+.head-2 {
+    margin-left: -100px;
+}
+
+.search-2 {
+    margin-left: 0px;
+}
+
+
+/* ---------------------------- */
+/* SERVICE SECTION*/
+/* ---------------------------- */
+
+#services {
+  padding: 60px 0 40px 0;
+}
+
+#services .box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 10px 40px 10px;
+  background: #fff;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  border: 1px solid rgba(15, 20, 97, 0.247);
+  box-shadow: 5px 10px #88888879;
+}
+
+#services .box:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+#services .icon {
+  margin: 0 auto 15px auto;
+  padding-top: 12px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+#services .icon i {
+  font-size: 36px;
+  line-height: 1;
+}
+
+#services .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+#services .title a {
+  color: #111;
+}
+
+#services .box:hover .title a {
+  color: #1bb1dc;
+}
+
+#services a:hover {
+    color: #1bb1dc !important;
+  }
+
+#services .description {
+  font-size: 14px;
+  line-height: 28px;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+/* Sections Header
+--------------------------------*/
+
+.section-header h3 {
+    font-size: 32px;
+    color: #413e66;
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    /* word-spacing: 6px; */
+  }
+  
+  .section-header p {
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+    padding-bottom: 60px;
+    color: #535074;
+    width: 50%;
+  }
+
+/* ---------------------------- */
+/* ADDS*/
+/* ---------------------------- */
+
+.adds {
+    padding: 60px 20px 75px 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column img {
+    vertical-align: middle;
+    width: 100%;
+    max-height: 490px;
+  }
+
+.small img {
+    margin-bottom: 18px;
+    max-height: 235px;
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+#footer {
+    /* background: #101522; */
+    background: #10182c;
+    padding: 0 0 25px 0;
+    color: #eee;
+    font-size: 14px;
+  }
+  
+  #footer .footer-top {
+    background: #000029;
+    padding: 60px 0 30px 0;
+  }
+  
+  #footer .footer-top .footer-info {
+    margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-info h3 {
+    font-size: 26px;
+    margin: 0 0 20px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    color: #fff;
+  }
+  
+  #footer .footer-top .footer-info img {
+    height: 40px;
+    margin-bottom: 10px;
+  }
+  
+  #footer .footer-top .footer-info p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+  }
+  
+  #footer .footer-top .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #222636;
+    color: #eee;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+  }
+  
+  #footer .footer-top .social-links a:hover {
+    /* background: #f82249; */
+    background: #fff;
+    color: #fff;
+  }
+  
+  #footer .footer-top h4 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 12px;
+    /* border-bottom: 2px solid #f82249; */
+    border-bottom: 2px solid #fff;
+  }
+  
+  #footer .footer-top .footer-links {
+    margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #footer .footer-top .footer-links ul i {
+    padding-right: 5px;
+    /* color: #f82249; */
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  #footer .footer-top .footer-links ul li {
+    border-bottom: 1px solid #262c44;
+    padding: 10px 0;
+  }
+  
+  #footer .footer-top .footer-links ul li:first-child {
+    padding-top: 0;
+  }
+  
+  #footer .footer-top .footer-links ul a {
+    color: #eee;
+  }
+  
+  #footer .footer-top .footer-links ul a:hover {
+    color: #f82249;
+  }
+  
+  #footer .footer-top .footer-contact {
+    margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-contact p {
+    line-height: 26px;
+  }
+  
+  #footer .footer-top .footer-newsletter {
+    margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-newsletter input[type="email"] {
+    border: 0;
+    padding: 6px 8px;
+    width: 65%;
+  }
+  
+  #footer .footer-top .footer-newsletter input[type="submit"] {
+    background: #f82249;
+    border: 0;
+    width: 35%;
+    padding: 6px 0;
+    text-align: center;
+    color: #fff;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  #footer .footer-top .footer-newsletter input[type="submit"]:hover {
+    background: #e0072f;
+  }
+  
+  #footer .copyright {
+    text-align: center;
+    padding-top: 30px;
+  }
+  
+  #footer .credits {
+    text-align: center;
+    font-size: 13px;
+    color: #ddd;
+  }

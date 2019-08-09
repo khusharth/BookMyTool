@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register - Individual</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link rel="stylesheet" type="text/css" href="css/register-organisation.css">
+        <!-- <link rel="stylesheet" type="text/css" href="css/parsley.css">  -->
+        <link rel="stylesheet"  href="css/bootstrap-select.min.css">
+        <link rel="stylesheet"  href="css/bootstrap.min.css">
+
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,300i,400&display=swap" rel="stylesheet"> 
+        <script src="https://kit.fontawesome.com/0488692621.js"></script>
+    </head>
+    <body>
+            <!-- Navigation Bar -->
+            <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="index.html">BookMyTool</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></spanNavbar>
+                    </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="form-inline my-2 my-lg-0 ml-3">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+                    </form>
+
+                    <ul class="navbar-nav mr-auto nav-links">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Features
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Freelancing</a>
+                        <a class="dropdown-item" href="#">Buy/Sell</a>
+                        <a class="dropdown-item" href="#">Forum</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="#">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLogin">Log in/Sign up</a>
+                    </li>
+                    </ul>
+                </div>
+                </nav>
+
+                <!----------- Modal ---------->
+                <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content" id="login-modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalLoginLabel">
+                                <!---- Tabs ---->
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                    <a class="nav-item nav-link active" id="nav-signin-tab" data-toggle="tab" href="#nav-signin" role="tab" aria-controls="nav-signin" aria-selected="true">Sign in</a>
+                                    <a class="nav-item nav-link" id="nav-signup-tab" data-toggle="tab" href="#nav-signup" role="tab" aria-controls="nav-signup" aria-selected="false">Sign up</a>
+                                </div>
+                            </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!---- Tabs content ---->
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="nav-signin" role="tabpanel" aria-labelledby="nav-signin-tab">
+                                    <form class="signin-form" method="POST">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Email address</label>
+                                            <input type="email" name="email" class="form-control" id="exampleInputEmail1"  placeholder="Enter email">  
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Password</label>
+                                            <input type="password" name="password" minlength="6" class="form-control" id="exampleInputPassword1" aria-describedby="passHelp" placeholder="Password">
+                                            <small id="passHelp" class="form-text text-muted">Password must be 6-20 character long.</small>
+                                        </div>
+                                        <div class="form-group form-check">
+                                            <input type="checkbox" name="checkbox" class="form-check-input" id="remember">
+                                            <label class="form-check-label" for="remember">Remember me</label>
+                                            <a class="forget-pass" href="#" id="forgetpassword">Forgot Password?</a>
+                                        </div>
+                                        
+                                        <div class="signin-container">
+                                            <button type="submit" name="submit" class="btn-login search-box search-box3">Sign in</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade" id="nav-signup" role="tabpanel" aria-labelledby="nav-signup-tab">
+                                    <p  class="register-title">Register as an</p>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <a href="individual.html">
+                                                <div class="register-icons">
+                                                    <i class="fas fa-user"></i>
+                                                </div>
+                                                <div class="icons-text">
+                                                    <p>Individual</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a href="organisation.html">
+                                                <div class="register-icons">
+                                                    <i class="fas fa-building"></i>
+                                                </div>
+                                                <div class="icons-text">
+                                                    <p>Organistaion</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="modal-content" id="forgot-password-modal-content">
+
+                                <div class="modal-header">
+                                    <h5 class="reset-header">Reset Password</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <p>To reset your password please enter your registered email address below.</p>
+                                    <form class="forget-pass-form" method="POST">
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Email address</label>
+                                            <input type="email" name="email" class="form-control" id="exampleInputEmail1"  placeholder="Enter email">  
+                                        </div>
+                                        
+                                        <div class="signin-container">
+                                            <button type="submit" name="submit" class="btn-login search-box search-box3 mt-3">Reset Password</button>
+                                        </div>
+                                        <div class="back-login-container">
+                                            <a class="back-to-login" href="#" id="backtologin">Back to Login?</a>
+                                        </div>
+                                    </form>
+                                </div>
+                        </div>
+                    </div>
+                </div> <!-- MODAL END -->
+                <!--------- END Navigation Bar -------->
+
+                <header class="section-register">
+                    <div class="register-container">
+                         <div class="card" id="card-1">
+                            <form class="register-form" id="register-form" method="POST">
+                            <div class="card-body">
+                                <h5 class="card-title">CREATE YOUR ACCOUNT</h5>
+                                   
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <input type="text" name="fname" class="form-control"  placeholder="First Name" >  
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <input type="text" name="lname" class="form-control"  placeholder="Last Name" >  
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" name="email" class="form-control" placeholder="Enter email" >  
+                                        </div>
+                                        
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <input type="password" name="pass1" minlength="6" class="form-control" id="pass1" aria-describedby="passHelp" placeholder="Password" >
+                                                    <small id="passHelp" class="form-text text-muted">Must be greater than 6 characters</small>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <input type="password" name="pass2" minlength="6" class="form-control" id="pass2" placeholder="Re-enter Password">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <input type="text" name="position" class="form-control"  placeholder="Position" >  
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <input type="text" name="department" class="form-control"  placeholder="Department">  
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <select class="custom-select">
+                                                        <option selected>Working Industry..</option>
+                                                        <option class="on-select-hide" value="Metal">Metal</option>
+                                                        <option class="on-select-hide" value="Plastic">Plastic</option>
+                                                        <option class="on-select-hide" value="Rubber">Rubber</option>
+                                                        <option id="other-select" value="Other">Other</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <input type="text" name="number" id="number-input" class="form-control"  placeholder="Number" >  
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <input type="text" name="other"  id="other-input" class="form-control"  placeholder="Other">  
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="signin-container mt-2">
+                                            <a name="next-1" id="next-1" class="btn-login search-box search-box3">Next </a>
+                                        </div>
+                            </div>
+                        </div>
+
+                        <div class="card collapse" id="card-2">
+                            <div class="card-body">
+                                <h5 class="card-title">ORGANISATION DETAILS</h5>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <input type="text" name="cname" class="form-control"  placeholder="Company Name" >  
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <input type="text" name="ccontact" class="form-control" placeholder="Company Contact" > 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <input type="text" name="gst" class="form-control" placeholder="GSTIN no." >  
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <select class="my-select selectpicker" title="Certificates" multiple data-live-search="true">
+                                                    <option>IATF</option>
+                                                    <option>ISO</option>
+                                                    <option>EMS</option>
+                                                    <option>OHSAS</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" name="googleLink" class="form-control" placeholder="Google Location Link">  
+                                        </div>
+                                        <div class="row mt-5">
+                                            <div class="col-md-6">
+                                                <a name="prev-1" id="prev-1" class="btn-login search-box search-box3">Previous</a>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <a  name="next-2" id="next-2" class="btn-login search-box search-box3">Next</a>
+                                            </div>
+                                        </div>
+                            </div>
+                        </div>
+
+                        <div class="card collapse" id="card-3">
+                            <div class="card-body">
+                                <h5 class="card-title">SERVICES</h5>
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="form-check mt-2">
+                                                <input class="form-check-input" type="checkbox" value="" id="Check1">
+                                                <label class="form-check-label" for="Check1" style="color: #fff">
+                                                    Plastic Molds
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="form-group">
+                                                <input type="text" name="Speciality" class="form-control" placeholder="Speciality" > 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="form-check mt-2">
+                                                <input class="form-check-input" type="checkbox" value="" id="Check1">
+                                                <label class="form-check-label" for="Check1" style="color: #fff">
+                                                    Press Tools
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="form-group">
+                                                <input type="text" name="Speciality" class="form-control" placeholder="Speciality" > 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="form-check mt-2">
+                                                <input class="form-check-input" type="checkbox" value="" id="Check1">
+                                                <label class="form-check-label" for="Check1" style="color: #fff">
+                                                    Rubber Molds
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="form-group">
+                                                <input type="text" name="Speciality" class="form-control" placeholder="Speciality" > 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="form-check mt-2">
+                                                <input class="form-check-input" type="checkbox" value="" id="Check1">
+                                                <label class="form-check-label" for="Check1" style="color: #fff">
+                                                    Die Cast Tools
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="form-group">
+                                                <input type="text" name="Speciality" class="form-control" placeholder="Speciality" > 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="form-check mt-2">
+                                                <input class="form-check-input" type="checkbox" value="" id="Check1">
+                                                <label class="form-check-label" for="Check1" style="color: #fff">
+                                                    Blow Molds
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="form-group">
+                                                <input type="text" name="Speciality" class="form-control" placeholder="Speciality"> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="form-check mt-2">
+                                                <input class="form-check-input" type="checkbox" value="" id="Check1">
+                                                <label class="form-check-label" for="Check1" style="color: #fff">
+                                                    Gauges
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="form-group">
+                                                <input type="text" name="Speciality" class="form-control" placeholder="Speciality" > 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <div class="form-check mt-2">
+                                                <input class="form-check-input" type="checkbox" value="" id="Check1">
+                                                <label class="form-check-label" for="Check1" style="color: #fff">
+                                                    Jix and Fixtures
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class="form-group">
+                                                <input type="text" name="Speciality" class="form-control" placeholder="Speciality"> 
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                                        
+                                    <div class="row mt-4">
+                                        <div class="col-md-6">
+                                            <a name="prev-2" id="prev-2" class="btn-login search-box search-box3">Previous</a>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a type="submit" name="submit" id="submit" class="btn-login search-box search-box3">Submit</a>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </form>
+                    </div>
+                </header>
+                <!--==========================
+                             Footer
+                ============================-->
+                <footer id="footer">
+                    <div class="footer-top">
+                        <div class="container">
+                            <div class="row">
+                    
+                            <div class="col-lg-3 col-md-6 footer-info">
+                                <h5>BookMyTool</h4>
+                                <p>In alias aperiam. Placeat tempore facere. Officiis voluptate ipsam vel eveniet est dolor et totam porro. Perspiciatis ad omnis fugit molestiae recusandae possimus. Aut consectetur id quis. In inventore consequatur ad voluptate cupiditate debitis accusamus repellat cumque.</p>
+                            </div>
+                    
+                            <div class="col-lg-3 col-md-6 footer-links">
+                                <h4>Features</h4>
+                                <ul>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Machine</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Inventory</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Plastic Molds</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Blow Molds</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Rubber Molds</a></li>
+                                </ul>
+                            </div>
+                    
+                            <div class="col-lg-3 col-md-6 footer-links">
+                                <h4>Features</h4>
+                                <ul>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Die Cast Tools</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Press Tools</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Stamping Tools</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Jix and Fixtures</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Gauges</a></li>
+                                </ul>
+                            </div>
+                    
+                            <div class="col-lg-3 col-md-6 footer-contact">
+                                <h4>Contact Us</h4>
+                                <p>
+                                Loni Kalbhor<br>
+                                Pune, Maharashtra<br>
+                                412201<br>
+                                <strong>Phone:</strong> +91 99999 88888<br>
+                                <strong>Email:</strong> bookmytool@example.com<br>
+                                </p>
+                    
+                                <div class="social-links">
+                                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+                                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="google-plus"><i class="fab fa-google-plus-g"></i></a>
+                                <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                    
+                            </div>
+                    
+                            </div>
+                        </div>
+                        </div>
+                    
+                        <div class="container">
+                        <div class="copyright">
+                            &copy; Copyright <strong>BookMyTool</strong>. All Rights Reserved
+                        </div>
+                        <div class="credits">
+                            Designed by MIT</a>
+                        </div>
+                    </div>
+                </footer>
+                <!-- #footer -->
+
+        <!-- JS -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap-select.min.js"></script>
+        <!-- <script src="js/parsley.min.js"></script> -->
+        <script src="js/modal.js"></script>
+         <script src="js/organization.js"></script>
+    </body>
+</html>

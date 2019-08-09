@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>BookMyTool</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">  
+
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/parsley.css">
+        <link rel="stylesheet"  href="css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,300i,400&display=swap" rel="stylesheet"> 
+        
+        <script src="https://kit.fontawesome.com/0488692621.js"></script>
+    </head>
+    <body>
+    		<!-- Navigation Bar -->
+            <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">BookMyTool</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></spanNavbar>
+                        </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <form class="form-inline my-2 my-lg-0 ml-3">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+                        </form>
+
+                      <ul class="navbar-nav mr-auto nav-links">
+                      	<li class="nav-item active">
+                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Features
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Freelancing</a>
+                            <a class="dropdown-item" href="#">Buy/Sell</a>
+                            <a class="dropdown-item" href="#">Forum</a>
+                          </div>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="#">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="modal" data-target="#modalLogin">Log in/Sign up</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+
+                   <!----------- Modal ---------->
+                   <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content" id="login-modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalLoginLabel">
+                                    <!---- Tabs ---->
+                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                        <a class="nav-item nav-link active" id="nav-signin-tab" data-toggle="tab" href="#nav-signin" role="tab" aria-controls="nav-signin" aria-selected="true">Sign in</a>
+                                        <a class="nav-item nav-link" id="nav-signup-tab" data-toggle="tab" href="#nav-signup" role="tab" aria-controls="nav-signup" aria-selected="false">Sign up</a>
+                                    </div>
+                                </h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <!---- Tabs content ---->
+                                <div class="tab-content" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="nav-signin" role="tabpanel" aria-labelledby="nav-signin-tab">
+                                        <form class="signin-form" method="POST">
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">Email address</label>
+                                                <input type="email" name="email" class="form-control" id="exampleInputEmail1"  placeholder="Enter email" required>  
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInputPassword1">Password</label>
+                                                <input type="password" name="password" minlength="6" class="form-control" id="exampleInputPassword1" aria-describedby="passHelp" placeholder="Password" required>
+                                                <small id="passHelp" class="form-text text-muted">Password must be 6-20 character long.</small>
+                                            </div>
+                                            <div class="form-group form-check">
+                                                <input type="checkbox" name="checkbox" class="form-check-input" id="remember">
+                                                <label class="form-check-label" for="remember">Remember me</label>
+                                                <a class="forget-pass" href="#" id="forgetpassword">Forgot Password?</a>
+                                            </div>
+                                            
+                                            <div class="signin-container">
+                                                <button type="submit" name="submit" class="btn-login search-box search-box3">Sign in</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="tab-pane fade" id="nav-signup" role="tabpanel" aria-labelledby="nav-signup-tab">
+                                        <p  class="register-title">Register as an</p>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <a href="individual.html">
+                                                    <div class="register-icons">
+                                                        <i class="fas fa-user"></i>
+                                                    </div>
+                                                    <div class="icons-text">
+                                                        <p>Individual</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <a href="organisation.html">
+                                                    <div class="register-icons">
+                                                        <i class="fas fa-building"></i>
+                                                    </div>
+                                                    <div class="icons-text">
+                                                        <p>Organistaion</p>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="modal-content" id="forgot-password-modal-content">
+
+                                    <div class="modal-header">
+                                      <h5 class="reset-header">Reset Password</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>To reset your password please enter your registered email address below.</p>
+                                        <form class="forget-pass-form" method="POST">
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">Email address</label>
+                                                <input type="email" name="email" class="form-control" id="exampleInputEmail1"  placeholder="Enter email" required>  
+                                            </div>
+                                            
+                                            <div class="signin-container">
+                                                <button type="submit" name="submit" class="btn-login search-box search-box3 mt-3">Reset Password</button>
+                                            </div>
+                                            <div class="back-login-container">
+                                                <a class="back-to-login" href="#" id="backtologin">Back to Login?</a>
+                                            </div>
+                                        </form>
+                                    </div>
+                            </div>
+                        </div>
+                        </div> <!-- MODAL END -->
+                  <!--------- END Navigation Bar -------->
+
+            <header class="section-1">
+                <div class="features">
+                    <ul>
+                        <li class="icons" style="margin-left:100px;">
+                            <a href="#">
+                                <!-- <span class="icons" style="margin-left:100px;"> -->
+                                <i class=" fas fa-tools"></i>
+                                <span class="caption">Machine</span>
+                            </a>
+                        </li>
+                        <li class="icons">
+                            <a href="#">
+                                <i class="fas fa-boxes"></i>
+                                <span class="caption">Inventory</span>
+                            </a>
+                        </li>
+                        <li class="icons">
+                            <a href="#">
+                                <i class="fab fa-product-hunt"></i>
+                                <span class="caption">Plastic Molds</span>
+                            </a>
+                        </li>
+                        <li class="icons">
+                            <a href="#">
+                                <i class="fas fa-wind"></i>
+                                <span class="caption">Blow Molds</span>
+                            </a>
+                        </li>
+                        <li class="icons"> 
+                            <a href="#">
+                                <i class="fas fa-eraser"></i>
+                                <span class="caption">Rubber Molds</span>
+                            </a>
+                        </li>
+                        <li class="icons">
+                            <a href="#">
+                                <i class="fas fa-dice-d6"></i>
+                                <span class="caption">Die Cast Tools</span>
+                            </a>
+                        </li>
+                        <li class="icons">
+                            <a href="#">
+                                <i class="fas fa-compress-arrows-alt"></i>
+                                <span class="caption">Press Tools</span>
+                            </a>
+                        </li>
+                        <li class="icons">
+                            <a href="#">
+                                <i class="fas fa-stamp"></i>
+                                <span class="caption">Stamping Tools</span>
+                            </a>
+                        </li>
+                        <li class="icons">
+                            <a href="#">
+                                <i class="fas fa-toolbox"></i>
+                                <span class="caption">Jix and Fixtures</span>
+                            </a>
+                        </li>
+                        <li class="icons">
+                            <a href="#">
+                                <i class="fas fa-luggage-cart"></i>
+                                <span class="caption">Gauges</span>
+                            </a>
+                        </li>
+                        <!-- <li class="icons">
+                                <a href="#">
+                                    <i class="fas fa-chevron-circle-down"></i>
+                                    <span class="caption">More</span>
+                                </a>
+                            </li> -->
+                    </ul>
+
+                    <ul>
+                        <li class="icons" style="margin-left:100px;">
+                            <a href="#">
+                                <!-- <span class="icons" style="margin-left:100px;"> -->
+                                <i class=" fas fa-tools"></i>
+                                <span class="caption">Machine</span>
+                            </a>
+                        </li>
+                        <li class="icons">
+                            <a href="#">
+                                <i class="fas fa-boxes"></i>
+                                <span class="caption">Inventory</span>
+                            </a>
+                        </li>
+                        <li class="icons">
+                            <a href="#">
+                                <i class="fab fa-product-hunt"></i>
+                                <span class="caption">Plastic Molds</span>
+                            </a>
+                        </li>
+                        <li class="icons">
+                            <a href="#">
+                                <i class="fas fa-wind"></i>
+                                <span class="caption">Blow Molds</span>
+                            </a>
+                        </li>
+                        <li class="icons"> 
+                            <a href="#">
+                                <i class="fas fa-eraser"></i>
+                                <span class="caption">Rubber Molds</span>
+                            </a>
+                        </li>
+                        <li class="icons">
+                            <a href="#">
+                                <i class="fas fa-dice-d6"></i>
+                                <span class="caption">Die Cast Tools</span>
+                            </a>
+                        </li>
+                        <li class="icons">
+                            <a href="#">
+                                <i class="fas fa-compress-arrows-alt"></i>
+                                <span class="caption">Press Tools</span>
+                            </a>
+                        </li>
+                        <li class="icons">
+                            <a href="#">
+                                <i class="fas fa-stamp"></i>
+                                <span class="caption">Stamping Tools</span>
+                            </a>
+                        </li>
+                        <li class="icons">
+                            <a href="#">
+                                <i class="fas fa-toolbox"></i>
+                                <span class="caption">Jix and Fixtures</span>
+                            </a>
+                        </li>
+                        <li class="icons">
+                            <a href="#">
+                                <i class="fas fa-luggage-cart"></i>
+                                <span class="caption">Gauges</span>
+                            </a>
+                        </li>
+                        <!-- <li class="icons">
+                                <a href="#">
+                                    <i class="fas fa-chevron-circle-down"></i>
+                                    <span class="caption">More</span>
+                                </a>
+                            </li> -->
+                    </ul>
+                </div>
+
+                <div class="container-cards">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="card cardd card-1">
+                                    <div class="card-body">
+                                      <h2 class="card-title">Machine</h2>
+                                      <p class="card-text">
+                                          <form class="form-inline my-2 my-lg-0 ml-3">
+                                             <input class="form-control mr-sm-2" style="text-align: center" type="search" placeholder="Search for a machine" size="35" aria-label="Search">
+                                                <a href="#" style="outline: none;">
+                                                    <div class="search-box search-box3">
+                                                        <i class="fas fa-search" style="margin-top: -18px"></i>
+                                                        <p>Search</p>
+                                                    </div>
+                                                </a>
+                                           </form>
+                                       </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="card cardd card-2">
+                                    <div class="card-body">
+                                      <h2 class="card-title">Inventory</h2>
+                                      <p class="card-text">
+                                          <form class="form-inline my-2 my-lg-0 ml-3">
+                                             <input class="form-control mr-sm-2" style="text-align: center" type="search" placeholder="Search in inventory" size="35" aria-label="Search">
+                                                <a href="#" style="outline: none;">
+                                                    <div class="search-box search-box3">
+                                                        <i class="fas fa-search" style="margin-top: -18px"></i>
+                                                        <p>Search</p>
+                                                    </div>
+                                                </a>
+                                           </form>
+                                      </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+    
+            </header>
+                <!-- Services Start -->
+                <section id="services" class="section-bg">
+                    <div class="container">
+
+                        <header class="section-header">
+                        <h3>Value Added Services</h3>
+                        <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
+                        </header>
+
+                        <div class="row">
+
+                        <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
+                            <div class="box">
+                            <div class="icon" style="background: #fceef3;"><i class="fas fa-briefcase" style="color: #688bff;"></i></div>
+                            <h4 class="title"><a href="">Freelancing</a></h4>
+                            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
+                            <div class="box">
+                            <div class="icon" style="background: #fff0da;"><i class="fas fa-shopping-cart" style="color: #688bff;"></i></div>
+                            <h4 class="title"><a href="">Buy - Sell Old Machines</a></h4>
+                            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+                            <div class="box">
+                            <div class="icon" style="background: #e6fdfc;"><i class="fas fa-users" style="color: #688bff;"></i></div>
+                            <h4 class="title"><a href="">Forum</a></h4>
+                            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                            </div>
+                        </div>
+
+                        </div>
+
+                    </div>
+                 </section>
+                <!-- #services -->
+
+                <!-- Adds Section  -->
+                <section class="adds">
+                     <div class="row">
+                        <div class="column col-sm-8">
+                            <img src="img/1.jpg">
+                        </div>
+                        <div class="column small col-sm-4">
+                            <img src="img/2.jpg">
+                            <img src="img/3.jpg">
+                        </div>
+                    </div>        
+                </section>
+                <!--==========================
+                             Footer
+                ============================-->
+                <footer id="footer">
+                    <div class="footer-top">
+                        <div class="container">
+                            <div class="row">
+                    
+                            <div class="col-lg-3 col-md-6 footer-info">
+                                <h5>BookMyTool</h4>
+                                <p>In alias aperiam. Placeat tempore facere. Officiis voluptate ipsam vel eveniet est dolor et totam porro. Perspiciatis ad omnis fugit molestiae recusandae possimus. Aut consectetur id quis. In inventore consequatur ad voluptate cupiditate debitis accusamus repellat cumque.</p>
+                            </div>
+                    
+                            <div class="col-lg-3 col-md-6 footer-links">
+                                <h4>Features</h4>
+                                <ul>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Machine</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Inventory</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Plastic Molds</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Blow Molds</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Rubber Molds</a></li>
+                                </ul>
+                            </div>
+                    
+                            <div class="col-lg-3 col-md-6 footer-links">
+                                <h4>Features</h4>
+                                <ul>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Die Cast Tools</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Press Tools</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Stamping Tools</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Jix and Fixtures</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Gauges</a></li>
+                                </ul>
+                            </div>
+                    
+                            <div class="col-lg-3 col-md-6 footer-contact">
+                                <h4>Contact Us</h4>
+                                <p>
+                                Loni Kalbhor<br>
+                                Pune, Maharashtra<br>
+                                412201<br>
+                                <strong>Phone:</strong> +91 99999 88888<br>
+                                <strong>Email:</strong> bookmytool@example.com<br>
+                                </p>
+                    
+                                <div class="social-links">
+                                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+                                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="google-plus"><i class="fab fa-google-plus-g"></i></a>
+                                <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                    
+                            </div>
+                    
+                            </div>
+                        </div>
+                        </div>
+                    
+                        <div class="container">
+                        <div class="copyright">
+                            &copy; Copyright <strong>BookMyTool</strong>. All Rights Reserved
+                        </div>
+                        <div class="credits">
+                            <!--
+                            All the links in the footer should remain intact.
+                            You can delete the links only if you purchased the pro version.
+                            Licensing information: https://bootstrapmade.com/license/
+                            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
+                            -->
+                            Designed by MIT</a>
+                        </div>
+                    </div>
+                </footer>
+                    <!-- #footer -->
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/parsley.min.js"></script>
+            <script src="js/modal.js"></script>
+    </body>
+</html>
