@@ -9,6 +9,11 @@ $('#other-select').click(function() {
     // $("#number-input").before($("#other-input"));
 });
 
+// On selecting any other select option hide the other input
+$('.on-select-hide').click( function() {
+    $('#other-input').hide();
+});
+
 
 //Display card-2 and hide card-1
 $('#next-1').click(function(){
