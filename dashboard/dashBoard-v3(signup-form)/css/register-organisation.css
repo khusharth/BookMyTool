@@ -298,6 +298,7 @@ input[type=checkbox],
 input[type=checkbox]:focus
 {
   all: revert !important;
+  -webkit-appearance:checkbox !important;
 }
 
 #register-submit {
