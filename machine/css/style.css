@@ -99,6 +99,7 @@ a:hover{
     position : relative;
     max-width:  20em;
     margin: 0 auto;
+    margin-top: -25px;
     width: 100%;
   }
   
@@ -229,6 +230,13 @@ a:hover{
 /* ---------------------------- */
 /* View Information Button */
 /* ---------------------------- */
+.view-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
 .info-box {
     margin: 0 auto !important;
     background: #03A9F4;
