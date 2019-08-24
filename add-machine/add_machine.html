@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Machine</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- <link rel="stylesheet"  href="css/jquery.mobile-1.4.5.min.css"> -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet"  href="css/bootstrap.min.css">
+        
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,300i,400&display=swap" rel="stylesheet"> 
+        
+        <script src="https://kit.fontawesome.com/0488692621.js"></script>
+    </head>
+    <body>
+
+            <!--==========================
+                        Navigation Bar
+            ============================-->
+            <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">BookMyTool</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></spanNavbar>
+                    </button>
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="form-inline my-2 my-lg-0 ml-3">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+
+                    <ul class="navbar-nav mr-auto nav-links">
+                        <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Features
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Freelancing</a>
+                        <a class="dropdown-item" href="#">Buy/Sell</a>
+                        <a class="dropdown-item" href="#">Forum</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="#">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="#">Logout</a>
+                    </li>
+                    </ul>
+                </div>
+            </nav>
+            <!--------- END Navigation Bar -------->
+
+
+            <!--==========================
+                       ADD Machine
+            ============================-->
+            <section class="section-add-machine">
+               <h1>Add Machine</h1>
+
+               <div class="add-dropdown">
+                   <form method="POST">
+                        <div class="row">
+                            <div class="col">
+                                <select class="custom-select">
+                                    <option value="volvo">Volvo</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="mercedes">Mercedes</option>
+                                    <option value="audi">Audi</option>
+                                </select> 
+                            </div>
+                        </div>
+                   </form>     
+               </div>
+               
+                <hr class="divider mt-4">
+                <div class="add-machine-input mt-5">
+                    <form method="POST">
+                        <div class="form-row">
+                            <div class="form-group col-md-4">
+                                <label for="machine-name">Machine name</label>
+                                <input type="text" class="form-control" id="machine-name">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="file-upload" class="ml-2">Machine Image</label>
+                                <input type="file" class="form-control-file ml-2" id="file-upload">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="machine-name">Machine Location</label>
+                                <input type="text" class="form-control" id="machine-location">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-4" id="brand-select">
+                                <label for="machine-brand">Machine Brand</label>
+                                <select id="machine-brand" class="custom-select">
+                                    <option value="volvo">Volvo</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="mercedes">Mercedes</option>
+                                    <option value="other">Other</option>
+                                </select> 
+                            </div>
+                            <div class="form-group col-md-4">
+                                <div id="other-select">
+                                    <label for="other">Other</label>
+                                    <input type="text" class="form-control" id="other">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <hr class="divider mt-4">
+                <div class="insert-more">
+                    <h1 class="header-insert">Insert More Fields For Your Machine</h1>
+                </div>
+                <div class="insert-more-field mt-4">
+                    <div class="row">
+                        <div class="col-md-3">
+                            Categorie name
+                        </div>
+                        <div class="col-md-3">
+                            Value name
+                        </div>
+                        <div class="col-md-3">
+                            Unit
+                        </div>
+                        <div class="col-md-3">
+                            
+                        </div>
+                    </div>
+                    <div class="form-row mt-2">
+                        <div class="form-group col-md-3">
+                            <input type="text" class="form-control" id="machine-name">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <input type="text" class="form-control" id="machine-location">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <input type="text" class="form-control" id="machine-location">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <button class="btn" style="background-color: #2DA9F4; color: #fff;">Add</button>
+                        </div>
+                    </div>
+                    <div class="submit-btn text-center">
+                        <button class="btn bg-primary text-white">Submit</button>
+                    </div>
+                </div>
+            </section>
+            <!---------END Machine -------->
+
+
+            <!--==========================
+                        Footer
+            ============================-->
+            <footer id="footer">
+                    <div class="footer-top">
+                        <div class="container">
+                            <div class="row">
+                    
+                            <div class="col-lg-3 col-md-6 footer-info">
+                                <h5>BookMyTool</h4>
+                                <p>In alias aperiam. Placeat tempore facere. Officiis voluptate ipsam vel eveniet est dolor et totam porro. Perspiciatis ad omnis fugit molestiae recusandae possimus. Aut consectetur id quis. In inventore consequatur ad voluptate cupiditate debitis accusamus repellat cumque.</p>
+                            </div>
+                    
+                            <div class="col-lg-3 col-md-6 footer-links">
+                                <h4>Features</h4>
+                                <ul>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Machine</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Inventory</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Plastic Molds</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Blow Molds</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Rubber Molds</a></li>
+                                </ul>
+                            </div>
+                    
+                            <div class="col-lg-3 col-md-6 footer-links">
+                                <h4>Features</h4>
+                                <ul>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Die Cast Tools</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Press Tools</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Stamping Tools</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Jix and Fixtures</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Gauges</a></li>
+                                </ul>
+                            </div>
+                    
+                            <div class="col-lg-3 col-md-6 footer-contact">
+                                <h4>Contact Us</h4>
+                                <p>
+                                Loni Kalbhor<br>
+                                Pune, Maharashtra<br>
+                                412201<br>
+                                <strong>Phone:</strong> +91 99999 88888<br>
+                                <strong>Email:</strong> bookmytool@example.com<br>
+                                </p>
+                    
+                                <div class="social-links">
+                                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+                                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="google-plus"><i class="fab fa-google-plus-g"></i></a>
+                                <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                    
+                            </div>
+                    
+                            </div>
+                        </div>
+                        </div>
+                    
+                        <div class="container">
+                        <div class="copyright">
+                            &copy; Copyright <strong>BookMyTool</strong>. All Rights Reserved
+                        </div>
+                        <div class="credits">
+                            <!--
+                            All the links in the footer should remain intact.
+                            You can delete the links only if you purchased the pro version.
+                            Licensing information: https://bootstrapmade.com/license/
+                            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
+                            -->
+                            Designed by MIT</a>
+                        </div>
+                    </div>
+            </footer>
+
+                      
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+            <script src="js/bootstrap.min.js"></script>        
+            <script src="js/script.js"></script>
+    </body>
+</html>
