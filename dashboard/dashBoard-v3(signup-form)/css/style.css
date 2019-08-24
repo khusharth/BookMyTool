@@ -4,7 +4,8 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 html {
@@ -56,13 +57,15 @@ html {
 .btn-login {
   height: 50px;
   width: 100%;
-  padding-bottom: 10px !important;
-  font-weight: 700 !important;
 }
 
 .signin-container {
+  display:-webkit-box;
+  display:-ms-flexbox;
   display:flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .signin-form .search-box,
@@ -77,6 +80,21 @@ html {
   font-size: 85%;
 }
 
+.signin-form input::-webkit-input-placeholder,
+.forget-pass-form input::-webkit-input-placeholder {
+  font-size: 80%;
+}
+
+.signin-form input:-ms-input-placeholder,
+.forget-pass-form input:-ms-input-placeholder {
+  font-size: 80%;
+}
+
+.signin-form input::-ms-input-placeholder,
+.forget-pass-form input::-ms-input-placeholder {
+  font-size: 80%;
+}
+
 .signin-form input::placeholder,
 .forget-pass-form input::placeholder {
   font-size: 80%;
@@ -87,7 +105,9 @@ html {
 }
 /* ------ Forget Password ------ */
 .modal-header {
-  justify-content: center !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
   padding-bottom: 0 !important;
   border-bottom: transparent !important;
 }
@@ -106,8 +126,12 @@ html {
 
 .back-login-container {
   margin-top: 10px;
+  display:-webkit-box;
+  display:-ms-flexbox;
   display:flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /* ------ Register ------ */
@@ -115,8 +139,12 @@ html {
   font-size: 130% !important;
 }
 .register-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 10px;
   font-size: 400%;
   color: #000;
@@ -152,6 +180,8 @@ a:hover{
 /* ----------------------- */
 
 .section-1 {
+    /* background-image: linear-gradient(#000046,rgb(85, 201, 233) ); */
+    background-image: -webkit-gradient(linear,left top, left bottom,from(#000046),to(rgb(85, 201, 233)) );
     background-image: linear-gradient(#000046,rgb(85, 201, 233) );
     background-size: cover;
     background-position: center;
@@ -226,6 +256,24 @@ a:hover{
     padding: 30px 30px 0 30px;
 }
 
+.container-cards input[type="search"]::-webkit-input-placeholder {  
+                  
+    /* Firefox, Chrome, Opera */ 
+    text-align: center; 
+}
+
+.container-cards input[type="search"]:-ms-input-placeholder {  
+                  
+    /* Firefox, Chrome, Opera */ 
+    text-align: center; 
+}
+
+.container-cards input[type="search"]::-ms-input-placeholder {  
+                  
+    /* Firefox, Chrome, Opera */ 
+    text-align: center; 
+}
+
 .container-cards input[type="search"]::placeholder {  
                   
     /* Firefox, Chrome, Opera */ 
@@ -260,19 +308,27 @@ a:hover{
 
 /* ----- Search Button ------*/
 .search-box {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     background: #03A9F4;
     border-radius: 5px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font: 20px "Montserrat", sans-serif;
     font-weight: 300;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 20px;
     margin-left: 180px;
     padding: 10px;
     padding-bottom: 0;
+    -webkit-transition: all 400ms ease-in-out;
     transition: all 400ms ease-in-out;
   }
 
@@ -282,13 +338,16 @@ a:hover{
 }
 
 .search-box3:hover {
-    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    -webkit-box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+            box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     background: #0286c2;
   }
 
 .search-box3:active {
     background: #4FC3F7;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    -webkit-transition: all 50ms;
     transition: all 50ms;
   }
 
@@ -316,11 +375,14 @@ a:hover{
   border-radius: 10px;
   margin: 0 10px 40px 10px;
   background: #fff;
-  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  -webkit-box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+          box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   text-align: center;
   border: 1px solid rgba(15, 20, 97, 0.247);
-  box-shadow: 5px 10px #88888879;
+  -webkit-box-shadow: 5px 10px #88888879;
+          box-shadow: 5px 10px #88888879;
 }
 
 #services .box:hover {
@@ -399,8 +461,11 @@ a:hover{
 }
 
 .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .column img {
@@ -471,6 +536,7 @@ a:hover{
     text-align: center;
     width: 36px;
     height: 36px;
+    -webkit-transition: 0.3s;
     transition: 0.3s;
   }
   
@@ -550,6 +616,7 @@ a:hover{
     padding: 6px 0;
     text-align: center;
     color: #fff;
+    -webkit-transition: 0.3s;
     transition: 0.3s;
     cursor: pointer;
   }
