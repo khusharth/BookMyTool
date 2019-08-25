@@ -61,15 +61,12 @@ a:hover{
 /* Machine*/
 /* ---------------------------------------- */
 
-.machine-container {
-    /* text-align: center; */
-    margin: 0px 40px 80px 20px;
-}
 
 /* ------------ Filter Left ---------- */
 .filter-by {
     background-color: #D6E4EB;
     padding: 3px;
+    margin-top: 35px;
 }
 
 .filter ul{
@@ -161,13 +158,28 @@ a:hover{
     background-color: rgba(176, 203, 216, 0.849) !important;
 }
 .scroll {
-    margin-bottom: 50px;
-    margin-top: 40px;
+    margin: 30px auto 50px auto;
+    max-width: 1140px;
+    
 }
 
+/* -------------- MACHINE CARD ----------- */
+
+.machine-container {
+    /* text-align: center; */
+    margin: 0px 40px 80px 20px;
+}
+.machine-card {
+    max-width: 800px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 80%;
+}
 .shop-header {
-    font-size: 16px;
+    font-size: 90%;
     color:blue; 
+    padding: 5px;
 }
 
 .shop-text {
@@ -176,8 +188,6 @@ a:hover{
 }
 
 .card {
-    display: inline-block;
-    text-align: left;
     box-shadow: 5px 10px rgba(187, 187, 187, 0.726);
     margin-bottom: 40px;
     border: 1px solid rgba(63, 63, 194, 0.63) !important;
@@ -193,26 +203,39 @@ a:hover{
 }
 .card-header {
     padding: 0.4rem !important;
+    font-size: 110%
+}
+
+.machine-title {
+    margin-bottom: 2px;
 }
 
 .machine-name {
     letter-spacing: 1px;
-    font-size: 22px;
+    font-size: 75%;
     color: #fff;
     background-color: rgba(0, 76, 190, 0.863);
     padding: 3px;
+    float: left;
 }
 
 .right-certificates {
     float: right;
 }
 
+.capacity-container {
+    float: right;
+}
+.capacity {
+    font-size: 75%;
+    margin-top: 4px;
+}
 .available, .not-available {
     display: inline-block;
     margin-left: 10px;
     background-color: rgba(5, 179, 5, 0.801);
-    height: 20px;
-    width: 20px;
+    height: 14px;
+    width: 14px;
     border-radius: 50%;
     /* border-radius: 50%; */
 }
@@ -244,18 +267,14 @@ a:hover{
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     color: white;
     display: block;
-    font: 20px "Montserrat", sans-serif;
     font-weight: 300;
     justify-content: center;
-    margin: 20px;
-    margin-left: 180px;
-    padding: 10px;
-    padding-bottom: 0;
     transition: all 400ms ease-in-out;
   }
 
 .info-box p {
-  padding-left: 5px;
+    margin-bottom: 0;
+    padding: 6px;
 }
 
 .info-box3:hover {
