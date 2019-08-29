@@ -103,6 +103,7 @@ html {
 .forget-pass {
   float: right;
 }
+
 /* ------ Forget Password ------ */
 .modal-header {
   -webkit-box-pack: center !important;
@@ -165,7 +166,7 @@ html {
 /* FEATURES*/
 /* ---------------------------- */
 
-/* ---- LINKS ----- */
+/* -------- LINKS -------- */
 a:active,
 a:focus { 
     outline-style: none; 
@@ -180,7 +181,6 @@ a:hover{
 /* ----------------------- */
 
 .section-1 {
-    /* background-image: linear-gradient(#000046,rgb(85, 201, 233) ); */
     background-image: -webkit-gradient(linear,left top, left bottom,from(#000046),to(rgb(85, 201, 233)) );
     background-image: linear-gradient(#000046,rgb(85, 201, 233) );
     background-size: cover;
@@ -291,15 +291,6 @@ a:hover{
     border: 0 !important;
     
 }
-
-.card-1 {
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.5)),url("../img/gears.jpg"); */
-    
-} 
-
-.card-2 {
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.85),rgba(0, 0, 0, 0.6)),url("../img/inventory.jpg"); */
-} 
 
 .cardd h2 {
     letter-spacing: 2px;
