@@ -257,6 +257,15 @@ input:focus, textarea:focus, select:focus{
   font-size: 80%;
 }
 
+select {
+  /* color of the selected option */
+  color: white;  
+}
+option {
+  /* color of all the other options */
+  color: black; 
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
