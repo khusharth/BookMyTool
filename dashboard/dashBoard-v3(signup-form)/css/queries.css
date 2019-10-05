@@ -1,0 +1,90 @@
+ @media only screen and (max-width:1200px)
+{
+    .navbar sticky-top navbar-expand-lg navbar-light bg-light{width: 100% ;padding:.2%;}
+    .section-1{width: 100% ;padding:.2%;}
+}
+
+@media only screen and (max-width:1110px)
+{
+    .icons{
+        width: 48px;
+        margin-left: 35px;
+    }
+}
+@media only screen and (max-width:990px)
+{
+    .icons{
+        width: 45px;
+        margin-left: 30px;
+        font-size:25px;
+    }
+   
+   
+    
+}
+@media only screen and (max-width:766px)
+{
+   
+    .icons{
+        width: 40px;
+        margin-left: 25px;
+        font-size:20px;
+         
+    }
+   
+}
+@media only screen and (max-width:630px)
+{
+    .features{
+        padding-left: 20%;
+        padding-right: 20%
+    }
+    .icons{
+        width: 40px;
+        margin-left: 25px;
+        font-size:20px;
+         
+    }
+    .row-one{
+        padding-right: 0;
+        float: none;
+        padding-bottom: 5px;
+        
+    }
+    .row-two{
+        padding-left: 0;
+        float: bottom;
+       
+    }
+    .form-control{
+        margin-left: 15%;   
+    }
+   
+}
+@media only screen and (max-width:501px)
+{    
+     .features{
+        padding-left: 15%;
+        padding-right: 15%
+    }
+    .icons{
+        width: 30px;
+        padding: 0,10px; 
+    }
+       .row-one{
+        padding-right: 0;
+        float: none;
+           padding-bottom: 5px;
+        
+    }
+    .row-two{
+        padding-left:o; 
+        float: bottom;
+       
+    }
+    
+    .form-control{
+        margin-left: 10%;   
+    }
+    
+}
