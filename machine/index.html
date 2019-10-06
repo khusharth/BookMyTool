@@ -12,8 +12,9 @@
         <link rel="stylesheet"  href="css/scrolltabs.css">
         <link rel="stylesheet"  href="css/ion.rangeSlider.min.css">
         
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,300i,400&display=swap" rel="stylesheet"> 
-        
+        <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,300i,400&display=swap" rel="stylesheet">  -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
         <script src="https://kit.fontawesome.com/0488692621.js"></script>
     </head>
     <body>
@@ -118,10 +119,11 @@
                                             <input type="text" class="js-range-slider" name="my_range" value=""
                                                 data-type="double"
                                                 data-min="0"
-                                                data-max="1000"
-                                                data-from="200"
-                                                data-to="500"
+                                                data-max="2"
+                                                data-from="0.3"
+                                                data-to="1"
                                                 data-grid="true"
+                                                data-step="0.1"
                                             />
                                     </li>
                                 </ul>
@@ -133,7 +135,7 @@
                             <div class="card machine-card">
                                 <h6 class="card-header"><i class="fas fa-user-circle mr-3"></i>SUPPLIER ID: 11223344<span class="right-certificates">Certificates: ISO</span></h6>
                                 <h6 class="shop-header pl-3">SHOP SPECIALISATION<br><span class="shop-text">Gauges, OEM parts, CNC machine ..</span></h6>
-                                <div class="card-body pt-0 pb-1">
+                                <div class="card-body pt-0 pb-2">
                                     <div class="row">
                                         <div class="col-sm-3">
                                             <img src="https://cdn.pixabay.com/photo/2016/03/04/19/36/gears-1236578_960_720.jpg" class="w-100">
@@ -171,11 +173,18 @@
                                                     </button>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <ul>
-                                                        <li><strong>Name: </strong>Rama Krishna</li>
-                                                        <li><strong>Email: </strong>bookmytool@gmail.com</li>
-                                                        <li><strong>Address: </strong>Loni Kalbhor</li>
-                                                    </ul>
+                                                    <div class="row">
+                                                        <div class="col-md-3">
+                                                            <strong>Name: </strong>
+                                                            <strong>Email: </strong>
+                                                            <strong>Address: </strong>
+                                                        </div>
+                                                        <div class="col-md-9">
+                                                            <p>Rama Krishna</p>
+                                                            <p>bookmytool@gmail.com</p>
+                                                            <p>Loni Kalbor</p>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -369,7 +378,7 @@
                     // For Slider
 
                     $(".js-range-slider").ionRangeSlider();
-    
+                        
                     });
             </script>
             

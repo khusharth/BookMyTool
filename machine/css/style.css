@@ -7,10 +7,10 @@
     box-sizing: border-box;
 }
 
-html {
+html,body {
     background-color: #fff;
     color: #555;
-    font-family: "Montserrat", "Arial", sans-serif;
+    font-family: 'Open Sans', sans-serif !important;
     font-size: 20px;
     font-weight: 400;
     text-rendering: optimizeLegibility;
@@ -20,7 +20,7 @@ html {
 /* ---------------------------- */
 /* BLUE BUTTON */
 /* ---------------------------- */
-.btn-blue {
+/* .btn-blue {
     margin: 0 auto !important;
     background: #03A9F4;
     border-radius: 5px;
@@ -46,8 +46,27 @@ html {
     background: #4FC3F7;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     transition: all 50ms;
-  }
+  } */
 
+.btn-blue {
+    color: #2098c9;
+    font-size: 110%;
+    cursor: pointer;
+    border: 1px solid #2098c9;
+    padding: 5px;
+    border-radius: 2px;
+    
+}
+
+.btn-blue:hover {
+    color: #fff;
+    background-color: #2098c9;
+}
+
+/* Reset Bootstrap p tag style */
+p {
+    margin-bottom: 0 !important;
+}
 
 
 /* ---------------------------- */
@@ -114,7 +133,7 @@ a:hover{
 .irs-bar,
 .irs-from,
 .irs-to {
-    background-color: #0286c2 !important;
+    background-color: #2098c9 !important;
 }
 
 
@@ -172,14 +191,14 @@ a:hover{
 
 /* ----------------Filter right---------------- */
 .vertical {
-    border-left: 1px solid rgba(63, 63, 194, 0.63);
+    border-left: 1px solid rgb(182, 182, 182);
 }
 
 .scroll span,
 .scroll_tab_right_button,
 .scroll_tab_left_button,
 .shop-header {
-    background-color: rgba(176, 203, 216, 0.514) !important;
+    background-color: rgba(201, 225, 236, 0.514) !important;
 }
 
 .scroll span:hover {
@@ -199,14 +218,14 @@ a:hover{
 }
 .machine-card {
     max-width: 800px;
-    width: 80%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     font-size: 80%;
 }
 .shop-header {
     font-size: 90%;
-    color:blue; 
+    color:#2098c9; 
     padding: 5px;
 }
 
@@ -216,9 +235,9 @@ a:hover{
 }
 
 .card {
-    box-shadow: 5px 10px rgba(187, 187, 187, 0.726);
+    box-shadow: 2px 3px rgba(187, 187, 187, 0.726);
     margin-bottom: 40px;
-    border: 1px solid rgba(63, 63, 194, 0.63) !important;
+    border: 1px solid rgb(189, 189, 189) !important;
 }
 
 .card ul {
@@ -231,7 +250,8 @@ a:hover{
 }
 .card-header {
     padding: 0.4rem !important;
-    font-size: 110%
+    font-size: 110%;
+    color: #444;
 }
 
 .machine-title {
@@ -241,10 +261,11 @@ a:hover{
 .machine-name {
     letter-spacing: 1px;
     font-size: 75%;
-    color: #fff;
-    background-color: rgba(0, 76, 190, 0.863);
+    color: #2098C9;
+    font-weight: 600;
     padding: 3px;
     float: left;
+    
 }
 
 .right-certificates {
@@ -285,8 +306,8 @@ a:hover{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-top: 20px;
+    justify-content: flex-end;
+    margin-top: 5px;
 }
 
 /* ---------------------------- */
@@ -442,29 +463,3 @@ a:hover{
     color: #ddd;
 }
 
-
-
-/* 
-.breadcrumb-fixed {
-    position: fixed;
-    z-index: 2;
-    width: 100%;
-    border-radius: 0px !important;
-  }
-
-  #btnSearch {
-    height: 100%;
-    color: #fff;
-    border-radius: 0px 5px 5px 0px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #1c1c1c;
-  }
-
-  #btnSearch:link, #btnSearch:visited {
-    color: #fff;
-  }
-  #btnSearch:active, #btnSearch:hover {
-    background: #1c1c1c;
-    color: #fff;
-  } */
