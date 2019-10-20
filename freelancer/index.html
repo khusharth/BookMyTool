@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Freelancing</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet"  href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/ion.rangeSlider.min.css">
+        <link rel="stylesheet" href="css/chosen.min.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet"> 
+
+        <script src="https://kit.fontawesome.com/0488692621.js"></script>
+    </head>
+    <body>
+
+            <!--==========================
+                        Navigation Bar
+            ============================-->
+            <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">BookMyTool</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></spanNavbar>
+                    </button>
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="form-inline my-2 my-lg-0 ml-3">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+
+                    <ul class="navbar-nav mr-auto nav-links">
+                        <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Features
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Freelancing</a>
+                        <a class="dropdown-item" href="#">Buy/Sell</a>
+                        <a class="dropdown-item" href="#">Forum</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="#">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="#">Logout</a>
+                    </li>
+                    </ul>
+                </div>
+            </nav>
+            <!--------- END Navigation Bar -------->
+
+
+            <!--==========================
+                        Freelancers
+            ============================-->
+            <section class="section-freelancing">
+                <div class="row header-row">
+                    <div class="freelance-header">
+                        <p>Freelancers</p>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-3">
+                        <div class="add-detail-btn-container">
+                            <button class="btn-blue add-detail-btn">+ Add Your Details</button>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <form class="form-inline">
+                            <input class="form-control freelance-search mr-2" type="search" placeholder="Search for a freelancer" aria-label="Search"><button class="btn btn-info" type="submit">
+                            <i class="fas fa-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-3 filter-box-container">
+                        <div class="filter-box">
+                            <div class="filter-heading mb-3"><i class="fas fa-filter mr-1"></i>Filters</div>
+
+                            <div class="freelance-filters mb-3">
+                                <div class="small text-muted mb-2"><strong>Category</strong></div>
+                                <select data-placeholder="Choose Category" class="js-chosen-select chosen-multiple" multiple>
+                                        <option value="mumbai">Vem</option>
+                                        <option value="sam">Geeta</option>
+                                        <option value="Ram">MIT</option>
+                                        <option value="Pune">COEP</option>
+                                        <option value="Jaapur">PICT</option>
+                                </select>
+                            </div>
+
+                            <div class="freelance-filters mb-3">
+                                <div class="small text-muted mb-2"><strong>Location</strong></div>
+                                <select data-placeholder="Choose Department" class="js-chosen-select chosen-multiple" multiple>
+                                        <option value="IT">Pune</option>
+                                        <option value="CSE">Nagpur</option>
+                                        <option value="MECH">Jaipur</option>
+                                        <option value="Electrical">Kota</option>
+                                        <option value="Aeroscpace">Solapur</option>
+                                </select>
+                            </div>
+
+                            <div class="freelance-filters mb-3">
+                            <div class="small text-muted mb-2"><strong>Experience</strong></div>
+                            <input type="text" class="js-range-slider" name="my_range" value=""
+                                                data-type="double"
+                                                data-min="0"
+                                                data-max="10"
+                                                data-from="1"
+                                                data-to="5"
+                                                data-grid="true"
+                                                data-step="1"
+                                            />
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-9 freelance-box-container">
+                        <div class="freelance-box">
+                            <h6 class="freelance-title"><strong>Web Designer</strong></h6>
+                            <!-- <div class="company-name small text-muted"><strong>VEM Tooling</strong></div> -->
+                            <div class="freelance-location text-muted">Pune, Maharashtra</div>
+                            <div class="row mt-2 small text-muted">
+                                <div class="col-md-6">
+                                    <div class="row ">
+                                        <div class="col-md-4">
+                                            <strong>Name:</strong>
+                                        </div>
+                                        <div class="col-md-8">
+                                            Khusharth Patani
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row ">
+                                        <div class="col-md-3">
+                                            <strong>Email:</strong>
+                                        </div>
+                                        <div class="col-md-9">
+                                            khusharth19@gmail.com
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row small text-muted">
+                                <div class="col-md-6">
+                                    <div class="row ">
+                                        <div class="col-md-4">
+                                            <strong>Experience:</strong>
+                                        </div>
+                                        <div class="col-md-8">
+                                            2 years+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row ">
+                                        <div class="col-md-3">
+                                            <strong>Mobile:</strong>
+                                        </div>
+                                        <div class="col-md-9">
+                                            9876598765
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row small text-muted">
+                                <div class="col-md-6">
+                                    <div class="row ">
+                                        <div class="col-md-4">
+                                            <strong>Qualification:</strong>
+                                        </div>
+                                        <div class="col-md-8">
+                                            Btech Computer Science
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    
+                                </div>
+                            </div>
+
+                            <div class="row small text-muted">
+                                <div class="col-md-2">
+                                    <strong>Profile:</strong>
+                                </div>
+                                <div class="col-md-10">
+                                    <a href="https://github.com/khusharth/">https://github.com/khusharth/</a>
+                                </div>
+                            </div>
+
+                            <div class="freelance-footer mt-3">
+                                <!-- <button class="btn-blue">Send Email</button> -->
+                            </div>
+                        </div>
+
+
+                        <div class="freelance-box mt-3">
+                            <h6 class="freelance-title"><strong>Web Designer</strong></h6>
+                            <!-- <div class="company-name small text-muted"><strong>VEM Tooling</strong></div> -->
+                            <div class="freelance-location text-muted">Pune, Maharashtra</div>
+                            <div class="row mt-2 small text-muted">
+                                <div class="col-md-6">
+                                    <div class="row ">
+                                        <div class="col-md-4">
+                                            <strong>Name:</strong>
+                                        </div>
+                                        <div class="col-md-8">
+                                            Khusharth Patani
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row ">
+                                        <div class="col-md-3">
+                                            <strong>Email:</strong>
+                                        </div>
+                                        <div class="col-md-9">
+                                            khusharth19@gmail.com
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row small text-muted">
+                                <div class="col-md-6">
+                                    <div class="row ">
+                                        <div class="col-md-4">
+                                            <strong>Experience:</strong>
+                                        </div>
+                                        <div class="col-md-8">
+                                            2 years+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="row ">
+                                        <div class="col-md-3">
+                                            <strong>Mobile:</strong>
+                                        </div>
+                                        <div class="col-md-9">
+                                            9876598765
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row small text-muted">
+                                <div class="col-md-6">
+                                    <div class="row ">
+                                        <div class="col-md-4">
+                                            <strong>Qualification:</strong>
+                                        </div>
+                                        <div class="col-md-8">
+                                            Btech Computer Science
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    
+                                </div>
+                            </div>
+
+                            <div class="row small text-muted">
+                                <div class="col-md-2">
+                                    <strong>Profile:</strong>
+                                </div>
+                                <div class="col-md-10">
+                                    <a href="https://github.com/khusharth/">https://github.com/khusharth/</a>
+                                </div>
+                            </div>
+
+                            <div class="freelance-footer mt-3">
+                                <!-- <button class="btn-blue">Send Email</button> -->
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+            <!---------END Buy and Sell -------->
+
+
+            <!--==========================
+                        Footer
+            ============================-->
+            <footer id="footer">
+                    <div class="footer-top">
+                        <div class="container">
+                            <div class="row">
+                    
+                            <div class="col-lg-3 col-md-6 footer-info">
+                                <h5>BookMyTool</h4>
+                                <p>In alias aperiam. Placeat tempore facere. Officiis voluptate ipsam vel eveniet est dolor et totam porro. Perspiciatis ad omnis fugit molestiae recusandae possimus. Aut consectetur id quis. In inventore consequatur ad voluptate cupiditate debitis accusamus repellat cumque.</p>
+                            </div>
+                    
+                            <div class="col-lg-3 col-md-6 footer-links">
+                                <h4>Features</h4>
+                                <ul>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Machine</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Inventory</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Plastic Molds</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Blow Molds</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Rubber Molds</a></li>
+                                </ul>
+                            </div>
+                    
+                            <div class="col-lg-3 col-md-6 footer-links">
+                                <h4>Features</h4>
+                                <ul>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Die Cast Tools</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Press Tools</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Stamping Tools</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Jix and Fixtures</a></li>
+                                <li><i class="fa fa-angle-right"></i> <a href="#">Gauges</a></li>
+                                </ul>
+                            </div>
+                    
+                            <div class="col-lg-3 col-md-6 footer-contact">
+                                <h4>Contact Us</h4>
+                                <p>
+                                Loni Kalbhor<br>
+                                Pune, Maharashtra<br>
+                                412201<br>
+                                <strong>Phone:</strong> +91 99999 88888<br>
+                                <strong>Email:</strong> bookmytool@example.com<br>
+                                </p>
+                    
+                                <div class="social-links">
+                                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+                                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                    
+                            </div>
+                    
+                            </div>
+                        </div>
+                        </div>
+                    
+                        <div class="container">
+                        <div class="copyright">
+                            &copy; Copyright <strong>BookMyTool</strong>. All Rights Reserved
+                        </div>
+                        <div class="credits">
+                            <!--
+                            All the links in the footer should remain intact.
+                            You can delete the links only if you purchased the pro version.
+                            Licensing information: https://bootstrapmade.com/license/
+                            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=TheEvent
+                            -->
+                            Designed by MIT</a>
+                        </div>
+                    </div>
+            </footer>
+
+            <!-- Scrip tags   -->
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/ion.rangeSlider.min.js"></script>
+            <script src="js/chosen.jquery.min.js"></script>
+            <script type="text/javascript">
+                $( document ).ready(function() {
+                    $(".js-chosen-select").chosen({width: "95%"});
+                    $(".js-range-slider").ionRangeSlider();
+                        
+                    });
+                
+            </script>
+         
+            
+    </body>
+</html>
